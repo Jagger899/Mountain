@@ -15,9 +15,9 @@ body {
   color: #fff;
   font-family: 'Cabinet Grotesk', sans-serif;
   font-size: 18px;
-  
+  max-width: 1900px;
   font-weight: 700;
-  background-color: rgb(0, 217, 255);
+  // background-color: rgb(0, 217, 255);
 }
 
 a {
@@ -32,4 +32,14 @@ img {
   max-width: 1622px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+.wrapper {
+  max-width: 1900px;
+  margin: 0 auto;
+  // position: relative;
+}
+
+.main {
+  margin-top: 108px;
 }

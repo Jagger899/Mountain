@@ -1,0 +1,219 @@
+.mountain {
+  border-top: 1.5px solid rgba(255, 255, 255, 0.50);
+  
+
+  &__big-container {
+    max-width: 1820px;
+    margin: 0 0 0 auto;
+    display: flex;
+    
+  }
+
+  &__scroll {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 30px;
+    flex-direction: column;
+    margin-right: 60px;
+  }
+
+  &__scroll-link {
+    display: flex;
+    align-items: center;
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+      font-size: 24px;
+      font-weight: 400;
+      gap: 12px;
+  }
+
+  &__scroll-line {
+    height: 721px;
+    width: 1.5px;
+    background-color: rgba(255, 255, 255, 0.50);
+    margin-bottom: 33px;
+  }
+
+  &__img1 {
+    position: absolute;
+    top: 0;
+    // left: 17px;
+    z-index: -3;
+    width: 100%;
+  }
+
+  &__img2 {
+    position: absolute;
+    z-index: -1;
+    top: 8px;
+    // left:10px;
+    width: 100%;
+  }
+
+  &__box {
+    max-width: 1240px;
+    margin: 0 auto;
+    position: absolute;
+    top: 172px;
+    z-index: -2;
+    left:18.1%;
+
+  }
+
+  &__box-line {
+    width: 646px;
+    height: 6px;
+    background-color: rgba(217, 217, 217, 0.4);
+    margin: 0 auto 20px;
+  }
+
+  &__box-subtitle {
+    font-size: 56px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  &__box-title {
+    font-size: 156px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  &__right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  &__video-button-box {
+    background-color: rgba(255,255,255,0.2);
+    width: 136px;
+    height: 136px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 2px solid rgba(255,255,255,0.2);
+    // margin: 342px auto 106px;
+    align-self: center;
+    margin-bottom: auto;
+    margin-top: 347px;
+    backdrop-filter: blur(16px);
+    margin-right: 138px;
+  }
+
+  &__slider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__slider-first {
+    display: flex;
+    gap: 48px;
+    align-items: flex-end;
+  }
+
+  &__slider-descr {
+    max-width: 510px;
+    height: 242px;
+  }
+
+  &__facilities {
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(51, 51, 51, 0.2)), url("../images/mountain/svipimg1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 32px 32px 25px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 320px;
+    width: 304px;
+  
+  }
+  &__facilities-link {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__facilities-text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    align-self: center;
+  }
+
+  &__slider-title {
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 26px;
+  }
+
+  &__slider-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    color: #16F1FF;
+    margin-bottom: 30px;
+  }
+
+  &__slider-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 177%;
+  }
+
+  &__slider-second {
+    width: 507px;
+    
+  }
+
+  &__slider-blog {
+    font-size: 24px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 32px 32px 29px;
+    background-color: rgba(0, 0, 0, 0.20);
+    backdrop-filter: blur(16px);
+    border-radius: 12px 12px 0 0;
+  }
+
+  &__slider-second-photo {
+    position: relative;
+    height: 159px;
+    
+  }
+
+  &__slider-second-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    object-fit: cover;
+    z-index: 1;
+    border-radius: 0 0 12px 12px;
+  }
+
+  &__slider-second-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.20);
+    z-index: 3;
+  }
+}

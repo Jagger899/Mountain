@@ -4,6 +4,12 @@
   }
 }
 
+@mixin on901 {
+  @media (min-width:901px) {
+    @content;
+  }
+}
+
 @mixin on900 {
   @media (max-width:900px) {
     @content;
