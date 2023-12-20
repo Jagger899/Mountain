@@ -1,0 +1,35 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+// font-family: 'Inter',sans-serif;
+// font-family: 'Poppins',sans-serif;
+
+body {
+  color: #fff;
+  font-family: 'Cabinet Grotesk', sans-serif;
+  font-size: 18px;
+  
+  font-weight: 700;
+  background-color: rgb(0, 217, 255);
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+[class*=__container] {
+  max-width: 1622px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
