@@ -185,6 +185,7 @@ body {
   font-size: 18px;
   max-width: 1900px;
   font-weight: 700;
+  background-color: #000;
 }
 
 a {
@@ -325,6 +326,9 @@ img {
 .header__mobile-menu-list {
   position: fixed;
   background-color: #000;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(51, 51, 51, 0.2)), url("../images/mountain/moutain-mobile.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
   top: 100px;
   left: 0;
   width: 100%;
@@ -336,14 +340,10 @@ img {
   gap: 20px;
   transform: translateY(120%);
   transition: transform 500ms ease-in;
+  z-index: 10;
 }
 .header__mobile-menu-list--active {
   transform: translate(0);
-}
-@media (min-width: 901px) {
-  .header__mobile-menu-list {
-    display: none;
-  }
 }
 .header__mobile-menu-socials {
   display: flex;
@@ -356,6 +356,7 @@ img {
 }
 .header__mobile-menu-link:hover {
   transform: scale(1.2);
+  color: rgb(42, 101, 179);
 }
 .header__mobile-menu-social-link svg:hover {
   fill: red;
@@ -374,6 +375,11 @@ img {
   margin: 0 0 0 auto;
   display: flex;
 }
+@media (max-width: 1899px) {
+  .mountain__big-container {
+    padding: 0 10px;
+  }
+}
 .mountain__scroll {
   display: flex;
   justify-content: center;
@@ -381,6 +387,16 @@ img {
   max-width: 30px;
   flex-direction: column;
   margin-right: 60px;
+}
+@media (max-width: 750px) {
+  .mountain__scroll {
+    margin-right: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .mountain__scroll {
+    align-self: flex-start;
+  }
 }
 .mountain__scroll-link {
   display: flex;
@@ -416,6 +432,16 @@ img {
   top: 172px;
   z-index: -2;
   left: 18.1%;
+  top: 172px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+@media (max-width: 1500px) {
+  .mountain__box {
+    z-index: 3;
+  }
 }
 .mountain__box-line {
   width: 646px;
@@ -423,10 +449,40 @@ img {
   background-color: rgba(217, 217, 217, 0.4);
   margin: 0 auto 20px;
 }
+@media (max-width: 1450px) {
+  .mountain__box-line {
+    width: 500px;
+  }
+}
+@media (max-width: 750px) {
+  .mountain__box-line {
+    max-width: 400px;
+  }
+}
+@media (max-width: 480px) {
+  .mountain__box-line {
+    max-width: 300px;
+  }
+}
 .mountain__box-subtitle {
   font-size: 56px;
   font-weight: 700;
   text-align: center;
+}
+@media (max-width: 1450px) {
+  .mountain__box-subtitle {
+    font-size: 40px;
+  }
+}
+@media (max-width: 750px) {
+  .mountain__box-subtitle {
+    font-size: 30px;
+  }
+}
+@media (max-width: 500px) {
+  .mountain__box-subtitle {
+    font-size: 20px;
+  }
 }
 .mountain__box-title {
   font-size: 156px;
@@ -434,6 +490,26 @@ img {
   text-transform: uppercase;
   text-align: center;
   white-space: nowrap;
+}
+@media (max-width: 1450px) {
+  .mountain__box-title {
+    font-size: 120px;
+  }
+}
+@media (max-width: 1100px) {
+  .mountain__box-title {
+    font-size: 90px;
+  }
+}
+@media (max-width: 750px) {
+  .mountain__box-title {
+    font-size: 60px;
+  }
+}
+@media (max-width: 500px) {
+  .mountain__box-title {
+    font-size: 40px;
+  }
 }
 .mountain__right {
   width: 100%;
@@ -450,25 +526,45 @@ img {
   align-items: center;
   border-radius: 50%;
   border: 2px solid rgba(255, 255, 255, 0.2);
+  margin: 342px auto 106px;
   align-self: center;
-  margin-bottom: auto;
-  margin-top: 347px;
   backdrop-filter: blur(16px);
-  margin-right: 138px;
+  position: relative;
+}
+@media (max-width: 800px) {
+  .mountain__video-button-box {
+    margin: auto;
+    margin-top: 230px;
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 480px) {
+  .mountain__video-button-box {
+    margin-top: 170px;
+  }
 }
 .mountain__slider {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  overflow: hidden;
 }
 .mountain__slider-first {
   display: flex;
   gap: 48px;
   align-items: flex-end;
 }
+@media (max-width: 800px) {
+  .mountain__slider-first {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .mountain__slider-descr {
   max-width: 510px;
   height: 242px;
+}
+@media (max-width: 800px) {
+  .mountain__slider-descr {
+    width: 100%;
+  }
 }
 .mountain__facilities {
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(51, 51, 51, 0.2)), url("../images/mountain/svipimg1.jpg");
@@ -483,6 +579,23 @@ img {
   align-items: flex-start;
   height: 320px;
   width: 304px;
+}
+@media (max-width: 1450px) {
+  .mountain__facilities {
+    aspect-ratio: 1/1.2;
+  }
+}
+@media (max-width: 1250px) {
+  .mountain__facilities {
+    max-width: 260px;
+    max-height: 240px;
+  }
+}
+@media (max-width: 400px) {
+  .mountain__facilities {
+    max-width: 200px;
+    max-height: 200px;
+  }
 }
 .mountain__facilities-link {
   font-size: 24px;
@@ -501,6 +614,18 @@ img {
   font-weight: 700;
   margin-bottom: 26px;
 }
+@media (max-width: 1450px) {
+  .mountain__slider-title {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 400px) {
+  .mountain__slider-title {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+}
 .mountain__slider-subtitle {
   font-family: "Inter", sans-serif;
   font-size: 32px;
@@ -508,14 +633,45 @@ img {
   color: #16F1FF;
   margin-bottom: 30px;
 }
+@media (max-width: 1450px) {
+  .mountain__slider-subtitle {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 400px) {
+  .mountain__slider-subtitle {
+    font-size: 22px;
+  }
+}
 .mountain__slider-text {
   font-family: "Poppins", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 177%;
 }
+@media (max-width: 1450px) {
+  .mountain__slider-text {
+    font-size: 16px;
+  }
+}
 .mountain__slider-second {
   width: 507px;
+}
+@media (max-width: 1899px) {
+  .mountain__slider-second {
+    max-width: 500px;
+  }
+}
+@media (max-width: 1450px) {
+  .mountain__slider-second {
+    aspect-ratio: 2/1;
+  }
+}
+@media (max-width: 1160px) {
+  .mountain__slider-second {
+    display: none;
+  }
 }
 .mountain__slider-blog {
   font-size: 24px;
@@ -550,6 +706,42 @@ img {
   left: 0;
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 3;
+}
+.mountain__video-box {
+  background-color: red;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  height: 50%;
+  display: none;
+  transform: translate(-50%, -50%);
+}
+.mountain__video-box_active {
+  display: block;
+}
+.mountain__video {
+  width: 100%;
+  padding-top: 56.25%;
+  margin: 0 auto;
+  position: relative;
+}
+.mountain__video iframe {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+}
+
+.swiper-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
 }
 
 /*# sourceMappingURL=main.css.map */

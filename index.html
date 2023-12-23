@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link href="https://fonts.cdnfonts.com/css/cabinet-grotesk" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -168,9 +169,9 @@
             Scroll down
           </a>
         </div>
-        <div class="mountain__right">
+        <div class="mountain__right"> 
           <div class="mountain__video-button-box">
-            <a href="#" class="mountain__video-button">
+            <a href="#" class="mountain__video-button" id="video-button">
               <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72" fill="none">
                 <g filter="url(#filter0_b_2_1022)">
                   <rect width="72" height="72" rx="36" fill="black" fill-opacity="0.6" />
@@ -191,7 +192,8 @@
             </a>
           </div>
           <div class="mountain__slider">
-            <div class="mountain__slider-first">
+            <div class="swiper-wrapper">
+              <div class="mountain__slider-first">
               <div class="mountain__facilities">
                 <a href="3" class="mountain__facilities-link">
                   See Video
@@ -232,9 +234,11 @@
               </div>
              
             </div>
+            </div>
+            
           </div>
         </div>
-        
+       
       </div>
       <div class="mountain__box">
         <div class="mountain__box-line"></div>
@@ -254,7 +258,18 @@
         <img src="./images/mountain/Mountain-bottom.png" class="mountain__img2" alt="">
       </picture>
       
-      
+      <div class="mountain__video-box" id="mountain__video-box">
+        <div class="mountain__video">
+          <iframe class="mountain__youtube" id="mountain__youtube" src="https://www.youtube.com/embed/_Z5coMfFloc?si=SAMWOt094vdsYbex" title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+            <!-- <iframe id="mountain__youtube" width="560" height="315" src="https://www.youtube.com/embed/pGMoJD89uMY?si=50Rm3xntsG-Sy3Qq"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe> -->
+        </div>
+
+      </div>
     </section>
     
   </main>
