@@ -23,16 +23,18 @@ mobileMenu.addEventListener('click', function () {
   }
 })
 
-// const swiper = new Swiper('.mountain__slider', {
-//   // Optional parameters
-//   direction: 'horizontal',
-//   loop: true,
+const swiper1 = new Swiper('.mountain__slider', {
+  // Optional parameters
+  direction: 'horizontal',
+  spaceBetween: 40,
+  loop: true,
+  grabcursor: true,
+  slidesPerView: 1,
+});
 
 
-// });
-
-const videobutton = document.getElementById('video-button');
-console.log(videobutton);
+const videoButton = document.getElementById('video-button');
+console.log(videoButton);
 
 const videoButtonBox = document.getElementById('mountain__video-box');
 
@@ -40,26 +42,21 @@ const youtube = document.querySelector('.mountain__youtube');
 console.log(youtube)
 console.log(videoButtonBox);
 
-videobutton.addEventListener('click', function () {
+videoButton.addEventListener('click', function () {
   if (!videoButtonBox.classList.contains('mountain__video-box_active')) {
     videoButtonBox.classList.add('mountain__video-box_active');
     return;
   }
-  
 });
 
+
+
 youtube.addEventListener('click', function (event) {
+  console.log('click')
   console.log(event)
-  const clickOnBlock = event.composedPath();
+  const clickOnBlock = event.composedPath().includes(videoButtonBox);
   console.log(clickOnBlock)
-  // if (!clickOnBlock) {
-  //   videoButtonBox.classList.remove('mountain__video-box_active');
-  // }
+  if (!clickOnBlock) {
+    videoButtonBox.classList.remove('mountain__video-box_active');
+  }
 })
-
-// videoButtonBox.addEventListener('click', function (event) {
-//   console.log('click')
-//   const clickOnBlock = event.composedPath().includes(videoButtonBox);
-
-  
-// }); 
