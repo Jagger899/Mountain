@@ -375,6 +375,7 @@ img {
 
 .mountain {
   border-top: 1.5px solid rgba(255, 255, 255, 0.5);
+  overflow: hidden;
 }
 .mountain__big-container {
   max-width: 1820px;
@@ -536,6 +537,7 @@ img {
   align-self: center;
   backdrop-filter: blur(16px);
   position: relative;
+  margin: 0 auto;
 }
 @media (max-width: 800px) {
   .mountain__video-button-box {
